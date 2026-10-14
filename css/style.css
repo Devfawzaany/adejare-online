@@ -121,8 +121,10 @@ button{font:inherit}
 .contact-list span{display:block;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.15em}
 .contact-list strong{display:block;margin-top:4px;font-weight:500}
 .socials{display:flex;gap:10px;flex-wrap:wrap}
-.social{width:46px;height:46px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:.72rem;transition:.25s}
-.social:hover{background:var(--gold);color:#0b0b0b}
+.footer .social{width:46px;height:46px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;background:#000;color:var(--gold);transition:.25s ease}
+.footer .social svg{display:block;width:22px;height:22px}
+.footer .social:hover{background:#080808;color:var(--gold-soft);border-color:var(--gold-soft);transform:translateY(-2px)}
+.social:focus-visible,.floating-wa:focus-visible{outline:2px solid var(--gold-soft);outline-offset:3px}
 .faq{display:grid;gap:10px}
 .faq-item{border:1px solid var(--line);border-radius:15px;overflow:hidden}
 .faq-question{width:100%;background:none;color:var(--text);border:0;padding:20px 22px;text-align:left;display:flex;justify-content:space-between;cursor:pointer;font-weight:500}
@@ -150,7 +152,10 @@ button{font:inherit}
 .product-actions{display:flex;gap:10px;flex-wrap:wrap}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .reveal.visible{opacity:1;transform:none}
-.floating-wa{position:fixed;right:20px;bottom:20px;z-index:90;display:flex;align-items:center;gap:9px;padding:12px 17px;border:1px solid var(--gold);border-radius:999px;background:#0a0a0a;color:var(--gold);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;box-shadow:0 10px 35px rgba(0,0,0,.45)}
+.floating-wa{position:fixed;right:20px;bottom:20px;z-index:90;width:103px;height:45px;display:flex;align-items:center;justify-content:center;gap:6px;padding:0 8px;border:1px solid var(--gold);border-radius:999px;background:#000;color:var(--gold);font-size:.57rem;text-transform:uppercase;letter-spacing:.08em;transition:.25s ease;box-shadow:0 10px 35px rgba(0,0,0,.45)}
+.floating-wa svg{display:block;width:18px;height:18px;flex:none}
+.floating-wa span{white-space:nowrap}
+.floating-wa:hover{background:#000;color:var(--gold-soft);border-color:var(--gold-soft);transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,0,0,.48)}
 @media(max-width:1050px){
   .nav-links{display:none}.menu-toggle{display:block}
   .nav-actions .nav-wa{display:none}
