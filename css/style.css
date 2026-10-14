@@ -132,7 +132,7 @@ button{font:inherit}
 .faq-item.open .faq-answer{display:block}
 .footer{border-top:1px solid var(--line);padding:65px 0 25px}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
-.footer-brand img{width:180px;height:55px;object-fit:cover;margin-bottom:18px}
+.footer-brand img{width:180px;height:55px;object-fit:cover;margin-bottom:18px;mix-blend-mode:lighten}
 .footer p,.footer a{color:var(--muted);font-size:.78rem}
 .footer h4{font-size:.72rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);margin-bottom:15px}
 .footer-links{display:grid;gap:8px}
